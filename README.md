@@ -1,3 +1,40 @@
+# 📊 Metabase Self-Learning Project
+
+This repository documents my journey in exploring **Metabase**, an open-source business intelligence and analytics platform. The project includes:
+
+- Connecting Metabase to a SQL Server instance (Xóm Data)
+- Role-based access control via Telegram Bot
+- Automatic report distribution via email
+- Embedding dashboards into a local Node.js web app
+
+---
+
+## 🔧 Project Setup
+
+### Prerequisites
+
+- Docker installed and running
+- SQL Server instance accessible
+- Node.js and npm installed (for embedding)
+
+### 🐳 Installing Metabase with Docker
+
+```bash
+docker run -d -p 3000:3000 --name metabase metabase/metabase
+```
+
+---
+
+## 🖼️ Step-by-step Setup Guide
+
+1. **Requesting an account via Telegram Bot**  
+   ![](./images/s01_get_account.png)  
+   > A custom Telegram Bot is used to generate an account creation request.
+
+2. **Receiving account credentials via Gmail**  
+   ![](./images/s02_receive_account.png)  
+   > The system sends login credentials to the user's email after approval.
+
 3. **Connecting to SQL Server from Metabase**  
    ![](./images/s03_import_connection.png)  
    > Use the credentials to log into Metabase and connect to the SQL Server database.
@@ -21,15 +58,6 @@
 8. **Building a Sample Dashboard**  
    ![](./images/s08_quick_sample_dashboard.png)  
    > Create your first dashboard by combining charts, filters, and saved questions.
-
-1. ![](./images/s01_get_account.png)
-2. ![](./images/s02_receive_account.png)
-3. ![](./images/s03_import_connection.png)
-4. ![](./images/s04_home_view.png)
-5. ![](./images/s05_xray_view.png)
-6. ![](./images/s06_sql_editor_with_parameters.png)
-7. ![](./images/s07_sql_editor_with_snippets.png)
-8. ![](./images/s08_quick_sample_dashboard.png)
 
 ---
 
@@ -81,7 +109,6 @@ node your-server-file.js
    ![](./images/s11_embed_result.png)  
    > The dashboard is now successfully embedded and viewable through your web page.
 
-
 ---
 
 ## 📁 Project Structure
@@ -91,15 +118,21 @@ metabase-self-learning/
 ├── images/
 │   ├── s01_get_account.png
 │   ├── s02_receive_account.png
-│   ├── ...
+│   ├── s03_import_connection.png
+│   ├── s04_home_view.png
+│   ├── s05_xray_view.png
+│   ├── s06_sql_editor_with_parameters.png
+│   ├── s07_sql_editor_with_snippets.png
+│   ├── s08_quick_sample_dashboard.png
+│   ├── s09_embed_options.png
+│   ├── s10_running_nodejs.png
 │   └── s11_embed_result.png
 ├── local-web/
 │   └── public/
 │       └── your-server-file.js
-├── connect-other-container.ipynb
 ├── docker-compose.yml
-├── LICENSE
 ├── README.md
+└── LICENSE
 ```
 
 ---
