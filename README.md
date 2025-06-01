@@ -48,7 +48,7 @@ docker run -d -p 3000:3000 --name metabase metabase/metabase
    > Quickly generate summaries and insights from tables using the powerful X-Ray feature.
 
 6. **Creating SQL Parameters**  
-   ![](./images/s06_sql_editor_with_parameters.png)  
+   ![](./images/s06_sql_editior_with_parameter.png)  
    > You can parameterize SQL queries to enable dynamic filtering in dashboards.
 
 7. **Using SQL Snippets**  
