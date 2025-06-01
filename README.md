@@ -92,7 +92,7 @@ npm install express
 mkdir public
 cd public
 # Add your embed page and server file here (e.g., server.js)
-node your-server-file.js
+node metabase-embed.js
 ```
 
 ### Embedding Flow:
@@ -129,7 +129,7 @@ metabase-self-learning/
 │   └── s11_embed_result.png
 ├── local-web/
 │   └── public/
-│       └── your-server-file.js
+│       └── metabase-embed.js
 ├── docker-compose.yml
 ├── README.md
 └── LICENSE
